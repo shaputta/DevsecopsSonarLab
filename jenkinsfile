@@ -51,7 +51,7 @@ pipeline {
                         echo "=== Running SonarQube Scanner ==="
                         sonar-scanner \
                         -Dsonar.organization="shaputta" \
-                        -Dsonar.projectKey="shaputta_DevsecopsLab2" \
+                        -Dsonar.projectKey="shaputta_DevsecopsSonarLab" \
                         -Dsonar.host.url=https://sonarcloud.io \
                         -Dsonar.sources=. \
                         -Dsonar.python.coverage.reportPaths=coverage.xml \
