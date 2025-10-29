@@ -64,6 +64,16 @@ pipeline {
                 }
             }
         }
+         stage('Quality Gate') {
+            steps {
+                script {
+                    timeout(time: 2, unit: 'MINUTES') {
+                        def qg = waitForQualityGate abortPipeline: true
+                        echo "Quality Gate status: ${qg.status}"
+                    }
+                }
+            }
+        }
 
     }
 
