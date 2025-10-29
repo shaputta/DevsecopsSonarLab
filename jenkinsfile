@@ -10,7 +10,7 @@ pipeline {
     environment {
         DOCKERHUB_USER = 'shacloudlab'
         IMAGE_NAME = 'jenkins-docker-lab'
-        SONARQUBE = 'sha-sq'
+        SONARQUBE = 'SonarCloud'
         SONAR_TOKEN = credentials('sha-sonar-token')
 
     }
